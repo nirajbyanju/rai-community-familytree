@@ -1,0 +1,174 @@
+
+html{
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+}
+
+.justify-text {
+  text-align: justify;
+}
+
+.pointer-cursor {
+  cursor: pointer !important;
+}
+.border-blue{
+  border-color: #130F60 !important;
+}
+.btn:hover {
+ 
+  color: #130F60 !important;
+  background-color: #fff;
+  border-color: #130F60;
+}
+
+.prime-background {
+  background: #130F60;
+}
+
+.text-prime {
+  color: #130F60;
+}
+
+.contri-frame {
+  overflow: hidden;
+  border-radius: 50%;
+
+  img {
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+  }
+}
+
+.lg-react-element {
+  column-count: 3;
+  column-gap: 10px;
+}
+
+.galleryimg {
+  max-width: 100%;
+  display: block;
+  padding: 5px 0px;
+  border-radius: 15px;
+  transition: transform 0.2s;
+}
+
+.vertical-timeline-element-content {
+  box-shadow: none !important;
+}
+
+@media only screen and (min-width: 1170px) {
+  .vertical-timeline.vertical-timeline--two-columns:before {
+    left: 48%;
+    margin-left: 1px;
+  }
+}
+
+.vertical-timeline::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 18px;
+  height: 100%;
+  width: 2px;
+  background: #7d7d7d;
+}
+
+.nav-tabs .nav-link {
+  border: none;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
+  color: #0EA5EA;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: #130F60;
+}
+.footer {
+  background-color: #130F60;
+}
+.footer-hover:hover {
+  color: #0EA5EA !important;
+  transition: color 0.3s ease;
+}
+
+.footerlink {
+  position: relative;
+  display: inline-block;
+  font-size: 15px;
+  transition: color 0.3s ease;
+}
+
+.footerlink:before {
+  position: absolute;
+  content: '';
+  width: 0%;
+  height: 1px;
+  color: #0EA5EA;
+  background-color: #0EA5EA;
+  bottom: 0;
+  left: 0;
+  transition: width 0.5s ease;
+}
+
+.footerlink:hover:before {
+  width: 100%;
+}
+
+.highlight-img {
+  transition: transform 0.4s ease;
+}
+
+.highlight-img:hover {
+  transform: scale(1.08);
+  /* Enlarge the image on hover */
+}
+
+
+.hover-fx {
+  font-size: 36px;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 50%;
+  text-align: center;
+  position: relative;
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.0);
+  transition: 300ms;
+}
+
+.hover-fx:after {
+  pointer-events: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  content: '';
+  box-sizing: content-box;
+  box-shadow: 0 0 0 3px #0EA5EA;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: 300ms;
+}
+
+
+
+.hover-fx:hover:after {
+  opacity: 1;
+  transform: scale(1.15);
+}
+
+.view-more {
+
+  transition: background-color 0.3s ease;
+  /* Smooth transition effect */
+}
+
+.view-more:hover {
+  background-color: #0EA5EA;
+  /* New background color on hover */
+}
